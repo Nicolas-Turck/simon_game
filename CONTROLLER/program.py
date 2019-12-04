@@ -1,5 +1,6 @@
 from player import *
 from random import *
+import os
 class Program:
     """class for program controller """
     def __init__(self):
@@ -18,8 +19,9 @@ class Program:
         self.program_list.append(self.numbers_program)
         print(self.program_list)
     
-    def clear_terminal():
+    def clear_terminal(self):
         """method for clear prompt after disaplay number"""
+        os.system("clear")
     
     def player_entry(self):
         """save number entry user """
