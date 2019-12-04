@@ -8,7 +8,7 @@ class Player:
     def name_entry(self):
         name = ""
         while name == "":
-            name=input("...enter your name :")
+            name = input("...enter your name :")
         self.name = name
     
     def level_choice(self):

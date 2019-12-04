@@ -16,5 +16,8 @@ game.random_choice()
 #ask method for save number in list
 game.add_list_choice()
 #method for clear
-game.clear_terminal()
+#game.clear_terminal()
 #
+game.player_entry()
+game.add_user_list()
+game.compare_list()

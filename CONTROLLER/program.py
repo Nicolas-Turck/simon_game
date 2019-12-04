@@ -6,6 +6,7 @@ class Program:
         self.program_list = []
         self.user_list = []
         self.numbers_program = None
+        self.number_user = 0
     
     def random_choice(self):
         """method for choice random number """
@@ -20,14 +21,24 @@ class Program:
     def clear_terminal():
         """method for clear prompt after disaplay number"""
     
-    def player_entry():
+    def player_entry(self):
         """save number entry user """
+        number_user = int(input("enter numbers ......"))
+        self.number_user = number_user
+        print(number_user)
     
-    def add_user_list():
+    def add_user_list(self):
         """save in list number entry user"""
+        self.user_list.append(self.number_user)
+        print(self.user_list)
 
-    def compare_list():
+    def compare_list(self):
         """compare list user and list program """
+        if self.user_list == self.program_list:
+            print("True")
+        else:
+            print("false")
+
 
     def clear_user_list():
         """clear user list number for again manche"""
