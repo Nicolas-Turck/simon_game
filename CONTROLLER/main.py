@@ -10,7 +10,11 @@ player = Player()
 player.name_entry()
 #ask method level choice for user select level
 player.level_choice()
-#show name and choice user
-
-#ask method for display choice game of user
-#show_information.display_name_choice()
+game = Program()
+#ask method random number 
+game.random_choice()
+#ask method for save number in list
+game.add_list_choice()
+#method for clear
+game.clear_terminal()
+#
