@@ -11,6 +11,8 @@ class Program:
         self.number_user = 0
         self.level_choice = None
 
+        #self.result_lists = None
+
     def get_level(self, level):
         """method for save level choice user"""
         self.level_choice = level
@@ -48,16 +50,39 @@ class Program:
     
     def compare_list(self, player_list):
         """compare list user and list program """
-        if player_list == self.program_list:
-            print("True")
-        else:
-            print("false")
+        print(player_list)
+        print(self.program_list)
+        compteur = 0
+        for i in range(0, len(self.program_list)):
+            if self.program_list[i]==player_list[i]:
+                result_lists = True
+                print(result_lists)
+            else:
+                result_lists = False
+                print(result_lists)
+        
+        
+        """if player_list == self.program_list:
+            result_lists = True
+            return result_lists"""
+
+            
+        """else:
+            result_lists = False
+            return result_lists"""
+
 
     def clear_user_list():
         """clear user list number for again manche"""
    
     def play_again():
         """ask to player if his play again"""
+        while play_again_choice != "yes" and play-again != "no":
+            play_again_choice = input("do you want to play again enter yes or no :")
+            if play_again_choice == "yes":
+                __name__ == "__main__"
+            else:
+                break
     
     
     
