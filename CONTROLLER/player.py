@@ -1,15 +1,15 @@
 class Player:
     """method for initialyse name"""
     def __init__(self):
-        self.name = None 
+        self.name = ""
         self.level = None
         
     """method for ask and save name entry"""
     def name_entry(self):
-        name = ""
-        while name == "":
-            name = input("...enter your name :")
-        self.name = name
+        name = input("enter your name  :")
+        if name == "":
+            name = "GHOST"
+        self.name = name.upper()
     
     def level_choice(self):
         """method for user choice level"""

@@ -1,7 +1,7 @@
-from player import *
-from player_game import *
 from random import *
 import os
+from time import sleep
+from player_game import *
 class Program:
     """class for program controller """
     def __init__(self):
@@ -9,7 +9,7 @@ class Program:
         self.user_list = []
         self.numbers_program = None
         self.number_user = 0
-    
+        
     def random_choice(self):
         """method for choice random number """
         self.numbers_program = randrange(1, 100)
@@ -19,6 +19,8 @@ class Program:
         """add to empty list number choice"""
         self.program_list.append(self.numbers_program)
         print(self.program_list)
+        sleep(2)
+
     
     def clear_terminal(self):
         """method for clear prompt after disaplay number"""
@@ -26,9 +28,9 @@ class Program:
     
     
 
-    def compare_list(self):
+    def compare_list(self, player_list):
         """compare list user and list program """
-        if self.user_list == self.program_list:
+        if player_list == self.program_list:
             print("True")
         else:
             print("false")

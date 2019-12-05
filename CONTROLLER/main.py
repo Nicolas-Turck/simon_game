@@ -1,7 +1,8 @@
 #! /usr/bin/env python3
 # coding: utf-8
 from player import *
-from program import*
+from program import *
+from player_game import *
 
 if __name__ == "__main__":
     print("Hello start game")
@@ -20,4 +21,9 @@ game.clear_terminal()
 player_game = Player_entry()
 player_game.player_entry()
 player_game.add_user_list()
-game.compare_list()
+print(Player_entry)
+print(player_game.__dict__)
+
+game.compare_list(player_game.player_list)
+
+#compare.compare_list()
