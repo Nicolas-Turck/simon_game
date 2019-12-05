@@ -1,4 +1,5 @@
 from player import *
+from player_game import *
 from random import *
 import os
 class Program:
@@ -23,16 +24,7 @@ class Program:
         """method for clear prompt after disaplay number"""
         os.system("clear")
     
-    def player_entry(self):
-        """save number entry user """
-        number_user = int(input("enter numbers ......"))
-        self.number_user = number_user
-        print(number_user)
     
-    def add_user_list(self):
-        """save in list number entry user"""
-        self.user_list.append(self.number_user)
-        print(self.user_list)
 
     def compare_list(self):
         """compare list user and list program """

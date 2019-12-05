@@ -17,7 +17,7 @@ game.random_choice()
 game.add_list_choice()
 #method for clear
 game.clear_terminal()
-#
-game.player_entry()
-game.add_user_list()
+player_game = Player_entry()
+player_game.player_entry()
+player_game.add_user_list()
 game.compare_list()
