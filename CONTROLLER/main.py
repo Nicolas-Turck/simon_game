@@ -18,12 +18,16 @@ game.get_level(player.level)
 game.random_choice()
 #ask method for save number in list
 game.add_list_choice()
-#method for clear
+#method for clear prompt
 game.clear_terminal()
 player_game = Player_entry()
+#ask method for player entry number 
 player_game.player_entry()
+#method for add to list number of user entry
 player_game.add_user_list()
+
 print(Player_entry)
 print(player_game.__dict__)
+#method for compare list player and program list
 game.compare_list(player_game.player_list)
 
