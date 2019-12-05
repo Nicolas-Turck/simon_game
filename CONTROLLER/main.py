@@ -12,6 +12,8 @@ player.name_entry()
 #ask method level choice for user select level
 player.level_choice()
 game = Program()
+#ask method to use level in program
+game.get_level(player.level)
 #ask method random number 
 game.random_choice()
 #ask method for save number in list
@@ -23,7 +25,5 @@ player_game.player_entry()
 player_game.add_user_list()
 print(Player_entry)
 print(player_game.__dict__)
-
 game.compare_list(player_game.player_list)
 
-#compare.compare_list()
