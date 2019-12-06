@@ -5,24 +5,19 @@ class Player_entry:
         self.player_list = []
         self.player_numbers = 0
 
-
     def player_entry(self):
         """save number entry user """
-        player_numbers = int(input("enter numbers ......"))
+        player_numbers = int(input("enter numbers ......:"))
         self.player_numbers = player_numbers
-        #print(player_numbers)
-    
+        
     def add_user_list(self):
         """save in list number entry user"""
-
-        self.player_list.append(self.player_numbers)
         #print(self.player_list)
-
+        self.player_list.append(self.player_numbers)
         player_list = self.player_list
-        print(player_list)
-
+        #print(player_list)
         return player_list
-        #Program.compare_list(Program, self.player_list)
+        
         
         
 
