@@ -12,9 +12,10 @@ class Player_entry:
         
     def add_user_list(self):
         """save in list number entry user"""
+        #print(self.player_list)
         self.player_list.append(self.player_numbers)
         player_list = self.player_list
-        print(player_list)
+        #print(player_list)
         return player_list
         
         

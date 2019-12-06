@@ -11,13 +11,11 @@ player = Player()
 player.name_entry()
 #ask method level choice for user select level
 player.level_choice()
-
 game = Program()
 #result_lists = True
 while 1:
     result_lists = True
     if result_lists == True:
-
         #ask method to use level in program
         game.get_level(player.level)
         #ask method random number 
@@ -25,17 +23,17 @@ while 1:
         #ask method for save number in list
         game.add_list_choice()
         #method for clear prompt
-        #game.clear_terminal()
+        game.clear_terminal()
         player_game = Player_entry()
         #ask method for player entry number 
         player_game.player_entry()
         #method for add to list number of user entry
         player_game.add_user_list()
-
         #print(Player_entry)
         #print(player_game.__dict__)
         #method for compare list player and program list
         game.compare_list(player_game.player_list)
+        game.clear_user_list()
 
     if result_lists == False:
         game.play_again()
