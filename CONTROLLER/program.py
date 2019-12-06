@@ -58,13 +58,15 @@ class Program:
         #player_numbers = int(input("enter numbers ......:"))
         for i in self.program_list:
             player_numbers = int(input("enter numbers ......:"))
-            if player_numbers == i:
+            #while player_numbers == i:   test loops while for break in else run
                 print("good number next")
                
-            if player_numbers != i:
+            else:
+                print("game over ")
                 break
                 
-    def play_again():
+                
+    def play_again(self):
         """ask to player if his play again"""
         while play_again_choice != "yes" and play-again != "no":
             play_again_choice = input("do you want to play again enter yes or no :")

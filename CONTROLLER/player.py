@@ -26,10 +26,5 @@ class Player:
         os.system("clear")
         return level
     
-    """ def player_entry(self):
-            save number entry user 
-        self.player_numbers = int(input("enter numbers......:"))
-        player_numbers = self.player_numbers
-        #game.compare_list(player_numbers, result_lists)
-        return player_numbers"""
+    
         
