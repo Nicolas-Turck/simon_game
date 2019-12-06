@@ -39,37 +39,35 @@ class Program:
         """method for clear prompt after display number"""
         if self.level_choice == 1:
             for  i in self.program_list:
-                print(i)
+                print(">".format(i))
                 sleep(3)
                 os.system("clear")
             
         if self.level_choice == 2:
             for i in self.program_list:
-                print(i)
+                print(">".format(i))
                 sleep(2)
                 os.system("clear")
             
         if self.level_choice == 3:
             for i in self.program_list:
-                print(i)
+                print(">{}".format(i))
                 sleep(1)
                 os.system("clear")
     
-    def compare_list(self, player_list):
+    def compare_list(self, player_list, result_lists):
         """compare list user and list program """
-        #print(player_list)
-        #print(self.program_list)
-        compteur = 0
+        
         for i in range(0, len(self.program_list)):
-            if self.program_list[i] ==player_list[i]:
+            if self.program_list[i] == player_list[i]:
                 result_lists = True
-                #print(result_lists)
                 return result_lists
+                print(result_lists)
                 
             else:
                 result_lists = False
                 return result_lists
-                #print(result_lists)
+                print(result_lists)
 
     def clear_user_list(self):
         """clear user list number for again manche"""
@@ -84,4 +82,4 @@ class Program:
                 break
     
     
-    
+   

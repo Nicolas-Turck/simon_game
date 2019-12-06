@@ -1,3 +1,5 @@
+import os
+from time import sleep
 class Player:
     """method for initialyse name"""
     def __init__(self):
@@ -17,5 +19,8 @@ class Player:
         while level != "1" and level != "2" and level != "3":
             level = input("...{} enter number of difficulty choice\n 1:easy 2:midle 3:hard\n".format(self.name))
         self.level = int(level)
-        return level
         print("{} you choice level {} start game ..........".format(self.name,level))
+        sleep(2)
+        os.system("clear")
+        return level
+        #print("{} you choice level {} start game ..........".format(self.name,level))

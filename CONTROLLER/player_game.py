@@ -7,7 +7,7 @@ class Player_entry:
 
     def player_entry(self):
         """save number entry user """
-        player_numbers = int(input("enter numbers ......"))
+        player_numbers = int(input("enter numbers ......:"))
         self.player_numbers = player_numbers
         
     def add_user_list(self):

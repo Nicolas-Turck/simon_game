@@ -32,7 +32,7 @@ while 1:
         #print(Player_entry)
         #print(player_game.__dict__)
         #method for compare list player and program list
-        game.compare_list(player_game.player_list)
+        game.compare_list(player_game.player_list, result_lists)
         game.clear_user_list()
 
     if result_lists == False:
