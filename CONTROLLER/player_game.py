@@ -7,16 +7,11 @@ class Player_entry:
 
     def player_entry(self):
         """save number entry user """
-        player_numbers = int(input("enter numbers ......:"))
-        self.player_numbers = player_numbers
-        
-    def add_user_list(self):
-        """save in list number entry user"""
-        #print(self.player_list)
-        self.player_list.append(self.player_numbers)
-        player_list = self.player_list
-        #print(player_list)
-        return player_list
+        self.player_numbers = int(input("enter numbers......:"))
+        #self.player_numbers = player_numbers
+        return self.player_numbers
+
+        #for i in range(0, len(self.program_list)):
         
         
         

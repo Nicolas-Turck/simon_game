@@ -1,11 +1,13 @@
 import os
 from time import sleep
+from program import *
 class Player:
     """method for initialyse name"""
     def __init__(self):
         self.name = ""
-        self.level = None
-        
+        self.level = None        
+        self.player_numbers = 0
+    
     """method for ask and save name entry"""
     def name_entry(self):
         name = input("enter your name  :")
@@ -23,4 +25,11 @@ class Player:
         sleep(2)
         os.system("clear")
         return level
-        #print("{} you choice level {} start game ..........".format(self.name,level))
+    
+    """ def player_entry(self):
+            save number entry user 
+        self.player_numbers = int(input("enter numbers......:"))
+        player_numbers = self.player_numbers
+        #game.compare_list(player_numbers, result_lists)
+        return player_numbers"""
+        
