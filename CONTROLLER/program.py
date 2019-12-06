@@ -39,19 +39,19 @@ class Program:
         """method for clear prompt after display number"""
         if self.level_choice == 1:
             for  i in self.program_list:
-                print(">".format(i))
+                print("> {}".format(i))
                 sleep(3)
                 os.system("clear")
             
         if self.level_choice == 2:
             for i in self.program_list:
-                print(">".format(i))
+                print("> {}".format(i))
                 sleep(2)
                 os.system("clear")
             
         if self.level_choice == 3:
             for i in self.program_list:
-                print(">{}".format(i))
+                print("> {}".format(i))
                 sleep(1)
                 os.system("clear")
     
