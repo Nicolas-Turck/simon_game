@@ -2,7 +2,7 @@
 # coding: utf-8
 from player import *
 from program import *
-
+# import method of file in folder simon game
 
 if __name__ == "__main__":
     print("Hello start game")
@@ -18,7 +18,7 @@ if __name__ == "__main__":
     while result_lists == True:
         # ask method to use level in program
         game.get_level(player.level)
-        # ask method random number 
+        # ask method random number
         game.random_choice()
         # ask method for save number in list
         game.add_list_choice()
@@ -29,8 +29,3 @@ if __name__ == "__main__":
     if result_lists == False:
         # ask method for restart or not game
         game.play_again()
-    
-    
-        
-    
-
