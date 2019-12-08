@@ -2,7 +2,6 @@
 # coding: utf-8
 from player import *
 from program import *
-# import method of file in folder simon game
 
 if __name__ == "__main__":
     print("Hello start game")
@@ -13,9 +12,9 @@ if __name__ == "__main__":
     player.level_choice()
     game = Program()
     #result_lists = True
-
+    restart = True
     result_lists = True
-    while result_lists == True:
+    while result_lists != False:
         # ask method to use level in program
         game.get_level(player.level)
         # ask method random number
@@ -26,6 +25,10 @@ if __name__ == "__main__":
         game.clear_terminal()
         # ask method for compare number user and program list
         game.compare_list(player.player_numbers, result_lists)
-    if result_lists == False:
-        # ask method for restart or not game
-        game.play_again()
+
+    #if result_lists == False:
+        #game.play_again_choice()
+    if restart == True:
+        __name__ == "__main__"
+
+

@@ -1,6 +1,8 @@
 from random import *
 import os
 from time import sleep
+from player import *
+from main import *
 
 class Program:
     """class for program controller """
@@ -9,7 +11,9 @@ class Program:
         self.numbers_program = None
         self.number_user = 0
         self.level_choice = None
-        # self.result_lists = None
+        self.play_again = None
+        self.result_lists = None
+        self.player_numbers = 0
 
     def get_level(self, level):
         """method for save level choice user"""
@@ -57,23 +61,34 @@ class Program:
         """compare list user and list program """
         #player_numbers = int(input("enter numbers ......:"))
         for i in self.program_list:
-            player_numbers = int(input("enter numbers ......:"))
-            #while player_numbers == i:   test loops while for break in else run
-                print("good number next")
-               
-            else:
-                print("game over ")
-                break
-                
-                
-    def play_again(self):
+            self.player_numbers = self.player_numbers_entry()
+            if self.player_numbers != i:
+                result_lists = False
+
+                pursuite = self.play_again_choice()
+            """else:
+                result_lists = True
+                return result_lists"""
+
+    def player_numbers_entry(self):
+        """method for verify if number is an integer"""
+        try:
+            self.player_numb = int(input("enter numbers........:"))
+        except:
+            print("not good")
+        return self.player_numb
+
+    def play_again_choice(self):
         """ask to player if his play again"""
-        while play_again_choice != "yes" and play-again != "no":
-            play_again_choice = input("do you want to play again enter yes or no :")
-            if play_again_choice == "yes":
-                __name__ == "__main__"
+        while self.play_again != "yes" or self.play_again != "no":
+            self.play_again = input("do you want to play again enter yes or no :")
+            if self.play_again == "yes":
+                restart = True
+                return restart
+
             else:
-                break
+                print("good bye")
+                exit()
     
     
    
