@@ -6,15 +6,15 @@ from program import *
 if __name__ == "__main__":
     print("Hello start game")
     player = Player()
-    #ask method name entry in player.py
+    #ask method name entry in player.py for entry name
     player.name_entry()
-    #ask method level choice for user select level
+    # ask method for choice level of game
     player.level_choice()
     game = Program()
-    #result_lists = True
-    restart = True
     result_lists = True
-    while result_lists != False:
+    play_again = True
+    while play_again == True:
+        numbers = None
         # ask method to use level in program
         game.get_level(player.level)
         # ask method random number
@@ -24,11 +24,11 @@ if __name__ == "__main__":
         # method for clear prompt
         game.clear_terminal()
         # ask method for compare number user and program list
-        game.compare_list(player.player_numbers, result_lists)
-
-    #if result_lists == False:
-        #game.play_again_choice()
-    if restart == True:
-        __name__ == "__main__"
+        if game.compare_list(player.player_numbers, numbers) == False:
+            break
+    pursuite = Program()
+    if pursuite.play_again_choice() == True:
+        print("replay.....")
+    
 
 
