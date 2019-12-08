@@ -1,34 +1,36 @@
 from random import *
 import os
 from time import sleep
-from player_game import *
+from player import *
+from main import *
+
 class Program:
     """class for program controller """
     def __init__(self):
         self.program_list = []
-        self.user_list = []
         self.numbers_program = None
         self.number_user = 0
         self.level_choice = None
-        #self.result_lists = None
+        self.play_again = None
+        self.result_lists = None
+        self.player_numbers = 0
 
     def get_level(self, level):
         """method for save level choice user"""
         self.level_choice = level
-        #print(self.level_choice)
         
     def random_choice(self):
         """method for choice random number """
         if self.level_choice == 3:
-            #select number betwen 1 and 100 
+            # select number betwen 1 and 100 
             self.numbers_program = randrange(1, 100)
             
         if self.level_choice == 2:
-            #select number betwen 1 and 20
+            # select number betwen 1 and 20
             self.numbers_program = randrange(1, 20)
             
         if self.level_choice == 1:
-            #select number between 1 and 10
+            # select number between 1 and 10
             self.numbers_program = randrange(1, 10)
             
     def add_list_choice(self):
@@ -55,31 +57,38 @@ class Program:
                 sleep(1)
                 os.system("clear")
     
-    def compare_list(self, player_list, result_lists):
+    def compare_list(self, player_numbers, program_lists):
         """compare list user and list program """
-        
-        for i in range(0, len(self.program_list)):
-            if self.program_list[i] == player_list[i]:
-                result_lists = True
-                return result_lists
-                print(result_lists)
-                
-            else:
+        #player_numbers = int(input("enter numbers ......:"))
+        for i in self.program_list:
+            self.player_numbers = self.player_numbers_entry()
+            if self.player_numbers != i:
                 result_lists = False
-                return result_lists
-                print(result_lists)
 
-    def clear_user_list(self):
-        """clear user list number for again manche"""
-        player_list = []
-    def play_again():
+                pursuite = self.play_again_choice()
+            """else:
+                result_lists = True
+                return result_lists"""
+
+    def player_numbers_entry(self):
+        """method for verify if number is an integer"""
+        try:
+            self.player_numb = int(input("enter numbers........:"))
+        except:
+            print("not good")
+        return self.player_numb
+
+    def play_again_choice(self):
         """ask to player if his play again"""
-        while play_again_choice != "yes" and play-again != "no":
-            play_again_choice = input("do you want to play again enter yes or no :")
-            if play_again_choice == "yes":
-                __name__ == "__main__"
+        while self.play_again != "yes" or self.play_again != "no":
+            self.play_again = input("do you want to play again enter yes or no :")
+            if self.play_again == "yes":
+                restart = True
+                return restart
+
             else:
-                break
+                print("good bye")
+                exit()
     
     
    
