@@ -12,8 +12,9 @@ class Program:
         self.number_user = 0
         self.level_choice = None
         self.play_again = None
-        self.result_lists = None
+        self.result_lists = True
         self.player_numbers = 0
+        
 
     def get_level(self, level):
         """method for save level choice user"""
@@ -62,29 +63,27 @@ class Program:
         #player_numbers = int(input("enter numbers ......:"))
         for i in self.program_list:
             self.player_numbers = self.player_numbers_entry()
-            if self.player_numbers != i:
-                result_lists = False
-
-                pursuite = self.play_again_choice()
-            """else:
-                result_lists = True
-                return result_lists"""
+        if self.player_numbers != i:
+            numbers = False
+            return numbers
+        
+                #pursuite = self.play_again_choice()
 
     def player_numbers_entry(self):
         """method for verify if number is an integer"""
         try:
-            self.player_numb = int(input("enter numbers........:"))
+            self.player_numbers = int(input("enter numbers........:"))
         except:
             print("not good")
-        return self.player_numb
+        return self.player_numbers
 
     def play_again_choice(self):
         """ask to player if his play again"""
         while self.play_again != "yes" or self.play_again != "no":
             self.play_again = input("do you want to play again enter yes or no :")
             if self.play_again == "yes":
-                restart = True
-                return restart
+                self.play_again = True
+                return self.play_again
 
             else:
                 print("good bye")
