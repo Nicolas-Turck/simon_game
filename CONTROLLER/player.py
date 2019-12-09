@@ -2,6 +2,8 @@ import os
 from time import sleep
 from program import *
 class Player:
+    """class for player entry name and level"""
+   
     """method for initialyse name"""
     def __init__(self):
         self.name = ""
