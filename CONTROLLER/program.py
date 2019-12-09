@@ -61,12 +61,11 @@ class Program:
     
     def compare_list(self, player_numbers, program_lists):
         """compare list user and list program """
-        #player_numbers = int(input("enter numbers ......:"))
         for i in self.program_list:
             self.player_numbers = self.player_numbers_entry()
         if self.player_numbers != i:
-            numbers = False
-            return numbers
+            self.program_list = []
+            return False
         
     def player_numbers_entry(self):
         """method for verify if number is an integer"""
@@ -85,8 +84,7 @@ class Program:
             if self.play_again == "yes":
                 self.program_list = []
                 return self.play_again
-                #self.play_again = True
-                #return self.play_again
+                
 
             else:
                 print("good bye")

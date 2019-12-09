@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7187d99-f43d-4cbc-9d90-0df2b7b8b368" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CONTROLLER/program.py" beforeDir="false" afterPath="$PROJECT_DIR$/CONTROLLER/program.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +23,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -77,25 +79,34 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1239" height="168" key="GridCell.Tab.0.bottom" timestamp="1575751868651">
+    <state width="1239" height="168" key="GridCell.Tab.0.bottom" timestamp="1575902436712">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1239" height="168" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1575751868651" />
-    <state width="1239" height="168" key="GridCell.Tab.0.center" timestamp="1575751868650">
+    <state width="1239" height="168" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1575902436712" />
+    <state width="1239" height="168" key="GridCell.Tab.0.center" timestamp="1575902436711">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1239" height="168" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1575751868650" />
-    <state width="1239" height="168" key="GridCell.Tab.0.left" timestamp="1575751868649">
+    <state width="1239" height="168" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1575902436711" />
+    <state width="1239" height="168" key="GridCell.Tab.0.left" timestamp="1575902436710">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1239" height="168" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1575751868649" />
-    <state width="1239" height="168" key="GridCell.Tab.0.right" timestamp="1575751868650">
+    <state width="1239" height="168" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1575902436710" />
+    <state width="1239" height="168" key="GridCell.Tab.0.right" timestamp="1575902436711">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1239" height="168" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1575751868650" />
-    <state x="333" y="220" key="com.intellij.ide.util.TipDialog" timestamp="1575751597397">
+    <state width="1239" height="168" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1575902436711" />
+    <state x="160" y="10" key="SettingsEditor" timestamp="1575904251562">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="160" y="10" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1575904251562" />
+    <state x="129" y="23" key="SettingsEditor/0.23.1280.729@0.23.1280.729" timestamp="1575902604430" />
+    <state x="333" y="220" key="com.intellij.ide.util.TipDialog" timestamp="1575902358790">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state x="333" y="220" key="com.intellij.ide.util.TipDialog/0.23.1280.729@0.23.1280.729" timestamp="1575751597397" />
+    <state x="333" y="220" key="com.intellij.ide.util.TipDialog/0.23.1280.729@0.23.1280.729" timestamp="1575902358790" />
+    <state x="384" y="239" width="699" height="293" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1575902780511">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="384" y="239" width="699" height="293" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1280.800@0.0.1280.800" timestamp="1575902780511" />
   </component>
 </project>
