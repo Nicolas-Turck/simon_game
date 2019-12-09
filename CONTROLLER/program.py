@@ -6,13 +6,14 @@ from main import *
 
 class Program:
     """class for program controller """
+    
+    """method for initialyse many attibutes """
     def __init__(self):
         self.program_list = []
         self.numbers_program = None
         self.number_user = 0
         self.level_choice = None
         self.play_again = None
-        self.result_lists = True
         self.player_numbers = 0
         
 
@@ -67,23 +68,25 @@ class Program:
             numbers = False
             return numbers
         
-                #pursuite = self.play_again_choice()
-
     def player_numbers_entry(self):
         """method for verify if number is an integer"""
-        try:
-            self.player_numbers = int(input("enter numbers........:"))
-        except:
-            print("not good")
-        return self.player_numbers
+        while True:
+            try:
+                self.player_numbers = int(input("enter numbers........:"))
+            except:
+                print("not good")
+                continue
+            return self.player_numbers
 
     def play_again_choice(self):
         """ask to player if his play again"""
         while self.play_again != "yes" or self.play_again != "no":
             self.play_again = input("do you want to play again enter yes or no :")
             if self.play_again == "yes":
-                self.play_again = True
+                self.program_list = []
                 return self.play_again
+                #self.play_again = True
+                #return self.play_again
 
             else:
                 print("good bye")

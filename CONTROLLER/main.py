@@ -11,7 +11,6 @@ if __name__ == "__main__":
     # ask method for choice level of game
     player.level_choice()
     game = Program()
-    result_lists = True
     play_again = True
     while play_again == True:
         numbers = None
@@ -25,10 +24,13 @@ if __name__ == "__main__":
         game.clear_terminal()
         # ask method for compare number user and program list
         if game.compare_list(player.player_numbers, numbers) == False:
+            print("game over")
             break
     pursuite = Program()
-    if pursuite.play_again_choice() == True:
+    pursuite.play_again_choice()
+    if play_again == True:
         print("replay.....")
-    
+            
+        
 
 
