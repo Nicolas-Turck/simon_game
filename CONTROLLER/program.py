@@ -71,11 +71,13 @@ class Program:
 
     def player_numbers_entry(self):
         """method for verify if number is an integer"""
-        try:
-            self.player_numbers = int(input("enter numbers........:"))
-        except:
-            print("not good")
-        return self.player_numbers
+        while True:
+            try:
+                self.player_numbers = int(input("enter numbers........:"))
+            except:
+                print("not good")
+                continue
+            return self.player_numbers
 
     def play_again_choice(self):
         """ask to player if his play again"""
