@@ -59,7 +59,7 @@ class Program:
                 sleep(1)
                 os.system("clear")
     
-    def compare_list(self, player_numbers, program_lists):
+    def compare_list(self):
         """compare list user and list program """
         for i in self.program_list:
             self.player_numbers = self.player_numbers_entry()

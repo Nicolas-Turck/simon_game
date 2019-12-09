@@ -25,9 +25,10 @@ if __name__ == "__main__":
             # method for clear prompt
             game.clear_terminal()
             # ask method for compare number user and program list
-            if game.compare_list(player.player_numbers, numbers) == False:
+            if game.compare_list() == False:
                 break
         pursuite = Program()
+        # ask method for choice replay or not
         pursuite.play_again_choice()
         if play_again == True:
             print("replay.....")
